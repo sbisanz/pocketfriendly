@@ -1,0 +1,673 @@
+﻿<!DOCTYPE html><html lang="en-US"><head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	
+	
+	
+	
+<title>Win probability – Heavy Topspin</title>
+<meta name="robots" content="max-image-preview:large">
+
+
+
+
+
+
+
+
+
+
+
+		
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+<meta name="generator" content="WordPress 5.8">
+
+		
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Win probability – Heavy Topspin">
+<meta property="og:url" content="http://www.tennisabstract.com/blog/category/win-probability/">
+<meta property="og:site_name" content="Heavy Topspin">
+<meta property="og:image" content="https://s0.wp.com/i/blank.jpg">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:creator" content="@tennisabstract">
+<meta name="twitter:site" content="@tennisabstract">
+
+
+<link rel="manifest" href="https://sbisanz.github.io/pocketfriendly/site.webmanifest"></head>
+
+<body><article><hr>Original: <a href='http://www.tennisabstract.com/blog/category/win-probability/'>http://www.tennisabstract.com/blog/category/win-probability/</a><hr><article id="post-4148">
+	
+	
+
+	<div>
+		
+<p>Not every double bagel is created equal. Today in Melbourne, <a href="http://www.tennisabstract.com/cgi-bin/player.cgi?p=AshleighBarty" target="_blank" rel="noopener">Ashleigh Barty</a> beat <a href="http://www.tennisabstract.com/cgi-bin/player.cgi?p=DankaKovinic" target="_blank" rel="noopener">Danka Kovinic</a> without losing a game, <a href="http://www.tennisabstract.com/charting/20210209-W-Australian_Open-R128-Ashleigh_Barty-Danka_Kovinic.html">dropping only ten points</a>. By contrast, a memorable Stuttgart first-rounder from 2015 saw <a href="http://www.tennisabstract.com/cgi-bin/player.cgi?p=SabineLisicki" target="_blank" rel="noopener">Sabine Lisicki</a> lose 6-0 6-0 to <a href="http://www.tennisabstract.com/cgi-bin/player.cgi?p=ZarinaDiyas" target="_blank" rel="noopener">Zarina Diyas</a>, requiring <a href="http://www.tennisabstract.com/charting/20150422-W-Stuttgart-R32-Zarina_Diyas-Sabine_Lisicki.html">88 points</a> and well over an hour to play. Lisicki won 37.5% of total points played that day, while Kovinic snuck off with just 16.7%.</p>
+
+
+
+<p>Barty’s performance was among the most dominant in recent WTA history. I have mostly complete match stats for the women’s tour going back to about 2010, and in that time frame, only two main draw double bagels have finished in fewer than 60 points:</p>
+
+
+
+<pre>Points  Year  Event       Round  Winner     Loser          
+57      2017  Hua Hin     R32    Golubic    Wisitwarapron  
+59      2019  New Haven   R32    Cepelova   Small          
+60      2021  Aus Open    R128   Barty      Kovinic        
+60      2019  Madrid      R16    Halep      Kuzmova        
+61      2010  Estoril     R32    Garrigues  De Lattre      
+62      2017  Bol         R32    Mrdeza     Thombare       
+63      2013  Aus Open    R64    Sharapova  Doi            
+63      2015  Bastad      R16    Barthel    Zanevska       
+64      2015  Toronto     R64    Vinci      Knapp          
+64      2017  Tokyo       R32    Krunic     Date           
+64      2011  Luxembourg  R32    Garrigues  Kremer         
+64      2012  Copenhagen  R32    Cornet     Ejdesgaard     
+65      2010  Moscow      R16    Kirilenko  Bondarenko</pre>
+
+
+
+<p>Today’s drubbing is even a bit more impressive than it looks on that list. Barty lost only 10 points–among the matches listed above, that’s equal to <a rel="noopener" href="http://www.tennisabstract.com/cgi-bin/player.cgi?p=JanaCepelova" target="_blank">Jana Cepelova</a>, two more than <a rel="noopener" href="http://www.tennisabstract.com/cgi-bin/player.cgi?p=ViktorijaGolubic" target="_blank">Viktorija Golubic</a>, and fewer than everyone else. Not all 60-pointers are identical: Because Kovinic forced one deuce game today, Barty had to win 50 points instead of the minimum 48.  <a rel="noopener" href="http://www.tennisabstract.com/cgi-bin/player.cgi?p=SimonaHalep" target="_blank">Simona Halep</a> only needed 48 in her <a href="http://www.tennisabstract.com/charting/20190508-W-Madrid-R16-Simona_Halep-Viktoria_Kuzmova.html">2019 Madrid double bagel</a>, meaning that she lost 12 of the 60 points played that day.</p>
+
+
+
+<p><strong>Double bagel probability</strong></p>
+
+
+
+<p>There’s a bit of luck involved in winning twelve games in a row, even for a player at the top of her game. Kovinic won 10 points today, so even if she did exactly the same thing in her next match, one can imagine her “bunching” her points differently and putting a game or two on the board. Unlikely, but possible.</p>
+
+
+
+<p>For any match, we can take the winner’s rate of service points won and return points won, and then generate the probability that she wins twelve games in a row. I did <a href="https://www.tennisabstract.com/blog/2020/01/05/aleksandre-metrevelis-bad-day-wasnt-double-bagel-bad/">this exact exercise</a> last January during the ATP Cup when <a rel="noopener" href="http://www.tennisabstract.com/cgi-bin/player.cgi?p=RobertoBautistaAgut" target="_blank">Roberto Bautista Agut</a> handed a 6-0 6-0 loss to <a rel="noopener" href="http://www.tennisabstract.com/cgi-bin/player.cgi?p=AleksandreMetreveli" target="_blank">Aleksandre Metreveli</a>. Metreveli lasted 97 points, or 61% longer than Kovinic. If Metreveli had continued to play at that level, his chances of losing twelve games in a row would have been a mere 14.8%.</p>
+
+
+
+<p>Barty won 88.9% of her service points and 78.8% of her return points against Kovinic today. If she continued at those rates, assuming no unusual streakiness or significantly better or worse performance at certain point scores, she would hold serve 99.8% of the time and break in 97.2% of return games. (By contrast, Bautista Agut’s probabilities were “only” 98.9% and 73.6%.)</p>
+
+
+
+<p>The likelihood of a 6-0 6-0 bagel is simply that of six holds and six breaks. For Barty: (99.8% ^ 6) * (97.2% ^ 6), or 83.6%. In other words, the way she was playing today, Ash would score the double bagel five out of six times.</p>
+
+
+
+<p>This probability is the number that really tells you how dominant a player was, even if it’s a few levels more complex than counting points and points lost. And by this measure, only Golubic’s great day holds a place on the list ahead of Barty’s. The p(DB) column shows the probability of a double bagel.</p>
+
+
+
+<pre>p(DB)  Year  Event       Round  Winner          Loser           
+88.7%  2017  Hua Hin     R32    Golubic         Wisitwarapron   
+83.6%  2021  Aus Open    R128   Barty           Kovinic         
+80.0%  2019  New Haven   R32    Cepelova        Small           
+76.8%  2019  Madrid      R16    Halep           Kuzmova         
+75.4%  2017  Tokyo       R32    Krunic          Date            
+68.8%  2011  Luxembourg  R32    Garrigues       Kremer          
+66.9%  2010  Estoril     R32    Garrigues       De Lattre       
+64.9%  2017  Bastad      R32    Krejcikova      Beck            
+64.1%  2017  Bol         R32    Mrdeza          Thombare        
+62.0%  2010  Moscow      R16    Kirilenko       Bondarenko      
+60.7%  2016  US Open     R128   Suarez Navarro  Pereira         
+59.2%  2013  Aus Open    R64    Sharapova       Doi             
+59.2%  2018  US Open     R128   Gavrilova       Sorribes Tormo</pre>
+
+
+
+<p>Gotta love the coincidence here. 13th on this list is a 2018 US Open first-rounder between <a href="http://www.tennisabstract.com/cgi-bin/player.cgi?p=DariaGavrilova" target="_blank" rel="noopener">Daria Gavrilova</a> and <a href="http://www.tennisabstract.com/cgi-bin/player.cgi?p=SaraSorribesTormo" target="_blank" rel="noopener">Sara Sorribes Tormo</a>. Both players are still going strong (except when Sorribes Tormo was up 6-0 4-0 on <a href="http://www.tennisabstract.com/cgi-bin/player.cgi?p=ArynaSabalenka" target="_blank" rel="noopener">Aryna Sabalenka</a> in Ostrava last October), both are in Melbourne, and they drew each other again this week. Gavrilova won again, though not quite as easily. Her reward? A second-round match on Thursday with Ashleigh Barty.</p>
+	</div>
+
+	
+	<footer>
+		<span><span>Posted on </span><a href="http://www.tennisabstract.com/blog/2021/02/09/ashleigh-bartys-fully-baked-double-bagel/" rel="bookmark"><time datetime="2021-02-09T21:21:15+00:00">February 9, 2021</time><time datetime="2021-02-09T21:25:02+00:00">February 9, 2021</time></a></span><span><span><span>Author </span><a href="http://www.tennisabstract.com/blog/author/jeffsackmanngmail-com/">Jeff</a></span></span><span><span>Categories </span><a href="http://www.tennisabstract.com/blog/category/bagels-and-breadsticks/" rel="category tag">Bagels and breadsticks</a>, <a href="http://www.tennisabstract.com/blog/category/trivia/" rel="category tag">Trivia</a>, <a href="http://www.tennisabstract.com/blog/category/win-probability/" rel="category tag">Win probability</a>, <a href="http://www.tennisabstract.com/blog/category/wta/" rel="category tag">WTA</a></span>			</footer>
+
+</article>
+<article id="post-3815">
+	
+	
+
+	<div>
+		
+<p>You don’t have to watch tennis for long before hearing a commentator explain that matches can be decided by the slimmest of margins. It’s common for a match winner to tally only 51% or 52% of the total points played. Dozens of times each year, players go even further, triumphing despite winning fewer than half of points. <a href="http://www.tennisabstract.com/cgi-bin/player.cgi?p=NovakDjokovic" target="_blank" rel="noopener noreferrer">Novak Djokovic</a> did just that in the 2019 Wimbledon final, claiming only 204 points to <a href="http://www.tennisabstract.com/cgi-bin/player.cgi?p=RogerFederer" target="_blank" rel="noopener noreferrer">Roger Federer</a>’s 218.</p>
+
+
+
+<p>It’s right to look at results like Djokovic-Federer and conclude that many matches are decided by slim margins or that performance on certain points is crucial. Indeed, players <a href="http://www.tennisabstract.com/blog/2015/09/11/a-new-way-of-looking-at-lottery-matches/">occasionally</a> win matches while winning as few as 47% of points.</p>
+
+
+
+<p>Still, it’s possible to take the “slim margins” claim too far. 51% sounds like a narrow margin, as does 53%. In many endeavors, sporting and otherwise, 55% represents a near-tie, and even 60% or 65% suggests that there isn’t much to separate the two sides. Not so in tennis, especially in the serve-centered men’s game. However it sounds, 60% represents a one-sided contest, and 65% is a blowout verging on embarrassment. In 2019, only three ATP tour matches saw one player win more than 70% of total points.</p>
+
+
+
+<p><strong>Answer a different question</strong></p>
+
+
+
+<p>For several reasons, total points won is an imperfect measure of one player’s superiority, even in a single match. One flaw is that it is usually stuck in that range between 35% and 65%, incorrectly implying that all tennis matches are relatively close contests. Another drawback is that not all 55% rates (or 51%s, or 62%s) are created equal. The longer the match, the more information we gain about the players. For a specific format, like best-of-three, a longer match usually requires closely-matched players to go to tiebreaks or a third set. But if we want to compare matches across different formats (like best-of-three and best-of-five), the length of the match doesn’t necessarily tell us anything. Best-of-five matches are longer because of the rules, not because of any characteristics of the players.</p>
+
+
+
+<p>The solution is to think in terms of probabilities. Given the length of a match, and the percentage of points won by each player, <em>what is the probability that the winner was the better player?</em></p>
+
+
+
+<p>To answer that question, we use the binomial distribution, and consider the likelihood that one player would win as many points as he did <em>if the players were equally matched</em>. If we flipped a fair coin 100 times, we would expect the number of heads to be around 50, but not that it will always be exactly 50. The binomial distribution tells us how often to expect any particular number of heads: 49, 50, or 51 are common, 53 is a bit less common, 55 even less so, 40 or 60 quite uncommon, as so on. For any number of heads, there’s some probability that it is entirely due to chance, and some probability that it occurs because the coin is biased.</p>
+
+
+
+<p>Here’s how that relates to a tennis match. We start the match pretending that we know nothing about the players, assuming that they are equal. The number of points is analogous to the number of coin flips–the more points, the more likely the player who wins the most is really better. The number of points won by the victor corresponds to the number of heads. If the winner claims 60% of points, we can be pretty sure that he really is better, just as a tally of 60% heads in 100 or more flips would indicate that the coin is probably biased.</p>
+
+
+
+<p><strong>More than just 59%</strong></p>
+
+
+
+<p>The binomial distribution helps us convert those intuitions into probabilities. Let’s look at an example. The 2019 Roland Garros final was a fairly one-sided affair. <a href="http://www.tennisabstract.com/cgi-bin/player.cgi?p=RafaelNadal" target="_blank" rel="noopener noreferrer">Rafael Nadal</a> took the title, winning 58.6% of total points played (116 of 198) over <a href="http://www.tennisabstract.com/cgi-bin/player.cgi?p=DominicThiem" target="_blank" rel="noopener noreferrer">Dominic Thiem</a>, despite dropping the second set. If Nadal and Thiem were equally matched, the probability that Nadal would win so many points is barely 1%. Thus, we can say that there is a 99% probability that Nadal was–on the day, in those conditions, and so on–the better player.</p>
+
+
+
+<p>No surprises there, and there shouldn’t be. Things get more interesting when we alter the length of the match. The two other 2019 ATP finals in which one player won about 58.6% of points were both claimed by Djokovic. In Paris, he won 58.7% of points (61 of 104) against <a href="http://www.tennisabstract.com/cgi-bin/player.cgi?p=DenisShapovalov" target="_blank" rel="noopener noreferrer">Denis Shapovalov</a>, and in Tokyo, he accounted for 58.3% (56 of 96) in his defeat of <a href="http://www.tennisabstract.com/cgi-bin/player.cgi?p=JohnMillman" target="_blank" rel="noopener noreferrer">John Millman</a>. Because they were best-of-three instead of best-of-five, those victories took about half as long as Nadal’s, so our confidence that Djokovic was the better player–while still high!–shouldn’t be quite as close to 100%. The binomial distribution says that those likelihoods are 95% and 94%, respectively. </p>
+
+
+
+<p>The winner of the average tour-level ATP match in 2019 won 55% of total points–the sort of number that sounds close, even as attentive fans know it really isn’t. When we convert every match result into a probability, the average likelihood that the winner was the better player is 80%. The latter number not only makes more intuitive sense–fewer results are clustered in the mid 50s, with numbers spread out from 15% to 100%–but it considers the length of the match, something that old-fashioned total-points-won ignores.</p>
+
+
+
+<p><strong>Why does this matter?</strong></p>
+
+
+
+<p>You might reasonably think that anyone who cared about quantifying match results already has these intuitions. You already know that 55% is a tidy win, 60% is an easy one, and that the length of the match means those numbers should be treated differently depending on context. Ranking points and prize money are awarded without consideration of this sort of trivia, so what’s the point of looking for an alternative?</p>
+
+
+
+<p>I find this potentially valuable as a way to represent <em>margin of victory</em>. It seems logical that any player rating system–such as <a href="http://tennisabstract.com/reports/atp_elo_ratings.html">my Elo ratings</a>–should incorporate margin of victory, because it’s tougher to execute a blowout than it is a narrow win. Put another way, someone who wins 59% of points against Thiem is probably better than someone who wins 51% of points against Thiem, and it would make sense for ratings to reflect that.</p>
+
+
+
+<p>Some ratings already incorporate margin of victory, including the one <a href="https://www.degruyter.com/view/j/jqas.2019.15.issue-4/jqas-2018-0008/jqas-2018-0008.xml?format=INT">introduced recently by Martin Ingram</a>, which I discussed with him on a <a href="http://www.tennisabstract.com/blog/2019/12/10/podcast-episode-80-martin-ingram-on-predicting-match-outcomes-bayesian-style/">recent podcast</a>. But many systems–again, including my Elo ratings–do not. Over the years, I’ve tested all sorts of potential ways to incorporate margin of victory, and have not found any way to consistently improve the predictiveness of the ratings. Maybe this is the one that will work.</p>
+
+
+
+<p><strong>Leverage and lottery matches</strong></p>
+
+
+
+<p>I’ve already hinted at one limitation to this approach, one that affects most other margin-of-victory metrics. Djokovic won only 48.3% of points in the 2019 Wimbledon final, a match he managed to win by coming up big in more important moments than Federer did. Recasting margin of victory in terms of probabilities gives us more 80% results than 55% results, but it also gives us more 25% results than 48% results. According to this approach, there is only a 24% chance that Djokovic was the better player that day. While that’s a defensible position–remember the 218 to 204 point gap–it’s also a bit uncomfortable.</p>
+
+
+
+<p>Using the binomial distribution as I’ve described above, we completely ignore leverage, the notion that some points are more valuable than others. While most players aren’t consistently good or bad in high-leverage situations, many matches are decided entirely by performance in those key moments.</p>
+
+
+
+<p>One solution would be to incorporate my concept of <a href="http://www.tennisabstract.com/blog/2019/07/26/roger-federer-wasnt-clutch-but-he-was-almost-clutch-enough/">Leverage Ratio</a>, which compares the importance of the points won by each player. I’ve further combined Leverage Ratio with Dominance Ratio, a metric closely related to total points won, into a single number I call DR+, or adjusted Dominance Ratio. It’s possible to win a match with a DR below 1.0, which means winning fewer return points than your opponent did, an occurrence that often occurs when total points won is below 50%. But when DR is adjusted for leverage, it’s extremely uncommon for a match winner to end up with a DR+ below 1.0. Djokovic’s DR in the Wimbledon final was 0.87, and his DR+ was 0.97, one of the very few instances in which a winner’s adjusted figure stayed below 1.0.</p>
+
+
+
+<p>It would be impossible to fix the binomial distribution approach in the same way I’ve “fixed” DR. We can’t simply multiply 65%, or 80%, or whatever, by Leverage Ratio, and expect to get a sensible result. We might not even be interested in such an approach. Calculating Leverage Ratio requires access to a point-by-point log of the match–not to mention a hefty chunk of win-probability code–which makes it extremely time consuming to compute, even when the necessary data is available.</p>
+
+
+
+<p>For now, leverage isn’t something we can fix. It is only something that we can be aware of, as we spot confusing margin-of-victory figures like Djokovic’s 24% from the Wimbledon final.</p>
+
+
+
+<p><strong>Rethinking, fast and slow</strong></p>
+
+
+
+<p>As with many of the metrics I devise, I don’t really expect wide adoption. If the best application of this approach is to create a component that improves Elo ratings, then that’s a useful step forward, even if it goes no further.</p>
+
+
+
+<p>The broader goal is to create metrics that incorporate more of our intuitions. Just because we’ve grown accustomed to the quirks of the tennis scoring system, a universe in which 52% is close and 54% is not, doesn’t mean we can’t do better. Thinking in terms of probabilities takes more effort, but it almost always nets more insight. </p>
+	</div>
+
+	
+	<footer>
+		<span><span>Posted on </span><a href="http://www.tennisabstract.com/blog/2019/12/28/rethinking-match-results-as-probabilities/" rel="bookmark"><time datetime="2019-12-28T16:30:45+00:00">December 28, 2019</time></a></span><span><span><span>Author </span><a href="http://www.tennisabstract.com/blog/author/jeffsackmanngmail-com/">Jeff</a></span></span><span><span>Categories </span><a href="http://www.tennisabstract.com/blog/category/forecasting/" rel="category tag">Forecasting</a>, <a href="http://www.tennisabstract.com/blog/category/win-probability/" rel="category tag">Win probability</a></span>			</footer>
+
+</article>
+<article id="post-3666">
+	
+	
+
+	<div>
+		
+<p><em><a href="http://www.settesei.it/2019/07/28/federer-non-e-stato-dominante-nei-momenti-chiave-ma-ci-e-andato-vicino/">Italian translation at settesei.it</a></em></p>
+
+
+
+<p>The stats from the Wimbledon final told a clear story. Over five sets, <a rel="noopener noreferrer" href="http://www.tennisabstract.com/cgi-bin/player.cgi?p=RogerFederer" target="_blank">Roger Federer</a> did most things slightly better than did his opponent, <a rel="noopener noreferrer" href="http://www.tennisabstract.com/cgi-bin/player.cgi?p=NovakDjokovic" target="_blank">Novak Djokovic</a>. Djokovic claimed a narrow victory because he won more of the most important points, something that doesn’t show up as clearly on the statsheet.</p>
+
+
+
+<p>We can add to the traditional stats and quantify that sort of clutch play. A method that goes beyond simply counting break points or thinking back to obviously key moments is to use the <em>leverage</em> metric to assign a value to each point, according to its importance. After every point of the match, we can calculate an updated probability that each player will emerge victorious. A point such as 5-all in a tiebreak has the potential to shift the probability a great deal; 40-15 in the first game of the match does not. </p>
+
+
+
+<p>Leverage quantifies that potential. The average point in a best-of-five match has a leverage of about 4%, and the most important points are several times that. Another way of saying that a player is “clutch” is that he is winning a disproportionate number of high-leverage points, even if he underwhelms at low-leverage moments.</p>
+
+
+
+<p><strong>Leverage ratio</strong></p>
+
+
+
+<p>In my <a href="https://www.economist.com/game-theory/2019/07/16/novak-djokovic-wins-the-most-thrilling-mens-tennis-match-ever">match recap</a> at The Economist, I took that one step further. While Djokovic won fewer points than Federer did, his successes mattered more. The average leverage of Djokovic’s points won was 7.9%, compared to Federer’s 7.2%. We can represent that difference in the form of a <em>leverage ratio</em> (LR), by dividing 7.9% by 7.2%, for a result of 1.1. A ratio of that magnitude is not unusual. In the 700-plus men’s grand slam matches in the <a href="http://www.tennisabstract.com/charting/meta.html">Match Charting Project</a>, the average LR of the more clutch player is 1.11. Djokovic’s excellence in key moments was not particularly rare, but in a close match such as the final, it was enough to make the difference.</p>
+
+
+
+<p>Recording a leverage ratio above 1.0 is no guarantee of victory. In about 30% of these 700 best-of-five matches, a player came out on top despite winning–on average–less-important points than his opponent did. Some of the instances of low-LR winners border on the comical, such as the 2008 French Open final, in which <a href="http://www.tennisabstract.com/cgi-bin/player.cgi?p=RafaelNadal" target="_blank" rel="noopener noreferrer">Rafael Nadal</a> drubbed Federer despite a LR of only 0.77. In blowouts, there just isn’t that much leverage to go around, so the number of points won matters a lot more than their timing. But un-clutch performances often translate to victory even in closer matches. <a href="http://www.tennisabstract.com/cgi-bin/player.cgi?p=AndyMurray" target="_blank" rel="noopener noreferrer">Andy Murray</a> won the 2008 US Open semi-final over Nadal in four sets despite a LR of 0.80, and in a very tight Wimbledon semi-final last year, <a href="http://www.tennisabstract.com/cgi-bin/player.cgi?p=KevinAnderson" target="_blank" rel="noopener noreferrer">Kevin Anderson</a> snuck past <a href="http://www.tennisabstract.com/cgi-bin/player.cgi?p=JohnIsner" target="_blank" rel="noopener noreferrer">John Isner</a> with a LR of 0.88.</p>
+
+
+
+<p>You don’t need a spreadsheet to recognize that tennis matches are decided by a mix of overall and clutch performance. The numbers I’ve shown you so far don’t advance our understanding much, at least not in a rigorous way. That’s the next step.</p>
+
+
+
+<p><strong>DR, meet BLR</strong></p>
+
+
+
+<p>Regular users of Tennis Abstract player pages are familiar with Dominance Ratio (DR), a stat invented by <a href="https://thirtylove.libsyn.com/">Carl Bialik</a> that re-casts total points won. DR is calculated by dividing a player’s rate of return points won by his rate of service points lost (his opponent’s rate of return points won), so the DR for a player who is equal on serve and return is exactly 1.0. </p>
+
+
+
+<p>Winners are usually above 1.0 and losers below 1.0. In the Wimbledon final, Djokovic’s DR was 0.87, which is extremely low for a winner, though not unheard of. DR balances the effect of serve performance and return performance (unlike total points won, which can skew in one direction if there are many more serve points than return points, or vice versa) and gives us a single-number summary of overall performance.</p>
+
+
+
+<p>But it doesn’t say anything about clutch, except that when a player wins with a low DR, we can infer that he outperformed in the big moments.</p>
+
+
+
+<p>To get a similarly balanced view of high-leverage performance, we can adapt leverage ratio to equally weight clutch play on serve and return points. I’ll call that <em>balanced leverage ratio </em>(BLR), which is simply the average of LR on serve points and LR on return points. BLR usually doesn’t differ much from LR, just as we often get the same information from DR that we get from total points won. Djokovic’s Wimbledon final BLR was 1.11, compared to a LR of 1.10. But in cases where a disproportionate number of points occur on one player’s racket, BLR provides a necessary correction.</p>
+
+
+
+<p><strong>Leverage-adjusted DR</strong></p>
+
+
+
+<p>We can capture leverage-adjusted performance by simply multiplying these two numbers. For example, let’s take <a rel="noopener noreferrer" href="http://www.tennisabstract.com/cgi-bin/player.cgi?p=StanislasWawrinka" target="_blank">Stan Wawrinka</a>’s defeat of Djokovic in the 2016 US Open final. Wawrinka’s DR was 0.90, better than Djokovic at Wimbledon this year but rarely good enough to win. But win he did, thanks to a BLR of 1.33, one of the highest recorded in a major final. The product of Wawrinka’s DR and his BLR–let’s call the result <em>DR+</em>–is 1.20. That number can be interpreted on the same scale as “regular” DR, where 1.2 is often a close victory if not a truly nail-biting one. DR+ combines a measure of how <em>many</em> points a player won with a measure of how <em>well-timed</em> those points were.</p>
+
+
+
+<p>Out of <a href="http://www.tennisabstract.com/charting/slamfinals.html">167 men’s slam finals</a> in the Match Charting Project dataset, 14 of the winners emerged triumphant despite a “regular” DR below 1.0. In every case, the winner’s BLR was higher than 1.1. And in 13 of the 14 instances, the strength of the winner’s BLR was enough to “cancel out” the weakness of his DR, in the sense that his DR+ was above 1.0. Here are those matches, sorted by DR+:</p>
+
+
+
+<pre>Year  Major            Winner              DR   BLR   DR+  
+2019  Wimbledon        Novak Djokovic    0.87  1.11  0.97  
+1982  Wimbledon        Jimmy Connors     0.88  1.20  1.06  
+2001  Wimbledon        Goran Ivanisevic  0.95  1.16  1.10  
+2008  Wimbledon        Rafael Nadal      0.98  1.13  1.10  
+2009  Australian Open  Rafael Nadal      0.99  1.13  1.12  
+1981  Wimbledon        John McEnroe      0.99  1.16  1.15  
+1992  Wimbledon        Andre Agassi      0.97  1.19  1.16  
+1989  US Open          Boris Becker      0.96  1.22  1.18  
+1988  US Open          Mats Wilander     0.98  1.21  1.18  
+2015  US Open          Novak Djokovic    0.98  1.21  1.18  
+2016  US Open          Stan Wawrinka     0.90  1.33  1.20  
+1999  Roland Garros    Andre Agassi      0.98  1.25  1.23  
+1990  Roland Garros    Andres Gomez      0.94  1.34  1.26  
+1991  Australian Open  Boris Becker      0.99  1.30  1.29</pre>
+
+
+
+<p>167 slam finals, and Djokovic-Federer XLVIII was the first one in which the player with the lower DR+ ended up the winner. (Some of the unlisted champions had subpar leverage ratios and thus DR+ figures lower than their DRs, but none ended up below the 1.0 mark.) While Federer was weaker in the clutch–notably in tiebreaks and when he held match points–his overall performance in high-leverage situations wasn’t as awful as those few memorable moments would suggest. More often than not, a player who combined Federer’s DR of 1.14 with his BLR of 0.90 would conclude the Wimbledon fortnight dancing with the Ladies’ champion.</p>
+
+
+
+<p>Surprisingly, 1-out-of-167 might <em>understate</em> the rarity of a winner with a DR+ below 1.0. Only one other best-of-five match in the Match Charting Project database (out of more than 700 in total) fits the bill. That’s the controversial 2019 Australian Open fourth-rounder between <a href="http://www.tennisabstract.com/cgi-bin/player.cgi?p=KeiNishikori" target="_blank" rel="noopener noreferrer">Kei Nishikori</a> and <a href="http://www.tennisabstract.com/cgi-bin/player.cgi?p=PabloCarrenoBusta" target="_blank" rel="noopener noreferrer">Pablo Carreno Busta</a>. Nishikori won with a 1.06 DR, but his BLR was a relatively weak 0.91, resulting in a DR+ of 0.97. Like the Wimbledon final, that Melbourne clash could have gone either way. Carreno Busta may have been unlucky with more than just <a href="http://www.tennis.com/pro-game/2019/01/pablo-carreno-busta-kei-nishikori-2019-australian-open/79165/">the chair umpire’s judgments</a>.</p>
+
+
+
+<p><strong>What does it all mean?</strong></p>
+
+
+
+<p>We knew that the Wimbledon final was close–now we have more numbers to show us how close it was. We knew that Djokovic played better when it mattered, and now we have more context that indicates how much better he was, which is not a unusually wide margin. Federer has won five of his slams despite title-match BLRs below 1.0, and two others with DRs below 1.14. He’s never won a slam with a DR+ of 1.03 or lower, but then again, there had never before been a major final that DR+ judged to be that close. Roger is no one’s idea of a clutch master, but he isn’t <em>that</em> bad. He just should’ve saved a couple of doses of second-set dominance for more important junctures later on.</p>
+
+
+
+<p>If you’re anything like me, you’ll read this far and be left with many more questions. I’ve started looking at several, and hope to write more in this vein soon. Is Federer usually less clutch than average? (Yes.) Is Djokovic that much better? (Yes.) How about Nadal? (Also better.) Is Nadal really better, or do his leverage numbers just look good because important points are more likely to happen in the ad court? (No, he really is better.) Does Djokovic have Federer’s number? (Not really, unless you mean his mobile number. Then yes.) Did everything change after Djokovic hit that return? (No.) </p>
+
+
+
+<p>There are many interesting related topics beyond the big three, as well. I started writing about <a href="http://www.tennisabstract.com/blog/2016/08/17/measuring-the-clutchness-of-everything/">leverage for subsets of matches</a> a few years ago, prompted by another match–the 2016 Wimbledon Federer-Raonic semi-final–in which Roger got outplayed when it mattered. Just as we can look at average leverage for points won and lost, we can also estimate the importance of points in which a player struck an ace, hit a backhand unforced error, or chose to approach the net.</p>
+
+
+
+<p>Matches are decided by a combination of overall performance and high-leverage play. Commonly-available stats do a pretty good job at the former, and fail to shine much light on the latter. The clutch part of the equation is often left to the speculation of pundits. As we build out a more complete dataset and have access to more and more point-by-point data (and thus leverage numbers for each point and match), we can close the gap, enabling us to better quantify the degree to which situational performance affects every player’s bottom line.</p>
+	</div>
+
+	
+	<footer>
+		<span><span>Posted on </span><a href="http://www.tennisabstract.com/blog/2019/07/26/roger-federer-wasnt-clutch-but-he-was-almost-clutch-enough/" rel="bookmark"><time datetime="2019-07-26T13:56:21+00:00">July 26, 2019</time><time datetime="2019-07-28T10:23:10+00:00">July 28, 2019</time></a></span><span><span><span>Author </span><a href="http://www.tennisabstract.com/blog/author/jeffsackmanngmail-com/">Jeff</a></span></span><span><span>Categories </span><a href="http://www.tennisabstract.com/blog/category/clutch/" rel="category tag">Clutch</a>, <a href="http://www.tennisabstract.com/blog/category/wimbledon/" rel="category tag">Wimbledon</a>, <a href="http://www.tennisabstract.com/blog/category/win-probability/" rel="category tag">Win probability</a></span>			</footer>
+
+</article>
+<article id="post-2813">
+	
+	
+
+	<div>
+		<p><a href="http://www.tennisabstract.com/settesei/2018/09/02/nadal-ha-quasi-perso-un-set-contro-ferrer/"><em>Italian translation at settesei.it</em></a></p>
+<p>In <a href="http://www.tennisabstract.com/cgi-bin/player.cgi?p=DavidFerrer" target="_blank" rel="noopener">David Ferrer</a>’s final grand slam, the draw gods handed him a doozy of a first-round assignment in <a href="http://www.tennisabstract.com/cgi-bin/player.cgi?p=RafaelNadal" target="_blank" rel="noopener">Rafael Nadal</a>. Ferrer has struggled all year, and no one seriously expected him to improve on his 6-24 career record against the King of Clay. In the end, he didn’t: Ferrer was forced to retire midway through the second set with a calf injury. But before his final Flushing exit, he gave Rafa a bit of a scare.</p>
+<p>Nadal won the first set, 6-3. The second set was a bit messier: Ferrer broke to love in the opening game, Rafa broke him back in the next, and a bit later, Ferrer broke again to take a 3-2 lead. He maintained that one break advantage until he physically couldn’t continue. Leading 4-3 and serving the next game, he was been two holds away from leveling the match.</p>
+<p>Does that mean Nadal “almost” lost the set? People on the internet argue about these things, and while I don’t understand why, I do love a good probability question. If it overlaps with semantics (yay sematics!), that’s a bonus.</p>
+<p>Let’s forget the word choice for now and reframe the question: Ignoring the injury, what were Ferrer’s chances of winning the set? If we assume that both players were equal, it’s a simple thing to plug into my <a href="https://github.com/JeffSackmann/tennis_misc">win probability model</a> and–ta da!–we find that from 4*-3, Ferrer had a roughly 85% chance of winning the set.</p>
+<p>But wait: I can already hear the Rafa fans screaming at me, these two players aren’t exactly equal. In the <a href="https://www.usopen.org/en_US/scores/stats/1101.html">102 points</a> the Spanish duo played on Monday night, Ferrer won 38% on return and Nadal won 47%. For an entire five-set match, those rates work out to a 93% chance of Rafa winning. Maybe that’s not quite high enough, but it’s in the ballpark. Using those figures, Ferrer’s chance of hanging on to win the second set drop significantly, to 57.5%. When you’re winning barely half of your service points, your odds of securing a pair of holds are worse than a coin flip. Had Ferrer won the set, it’s more likely that he would’ve needed to either break Rafa again or come through in a tiebreak.</p>
+<p>That’s a pretty big difference between our two initial estimates. 85% sounds good enough to qualify for “almost” (though one study quantifies the meaning of “almost” at&nbsp;<a href="https://en.wikipedia.org/wiki/Words_of_estimative_probability">above 90%</a>), but 57.5% does not.</p>
+<p>That doesn’t quite settle it, though. The win probability model takes all notions of streakiness out of the equation.&nbsp; According to the formula, there’s no patches of good or bad play, no dips in motivation, so extra energy to finish off a set, etc. I’m not convinced any of those exist in any systematic manner, but it’s tough to settle the question either way. Therefore, if we have the ability to use data from real-life matches, we should.</p>
+<p>And here, we can. Let’s start with Nadal. Going back to late 2011, I was able to identify 69 sets in which Rafa was returning down a break at 4-3. (There are probably more; my point-by-point dataset isn’t exhaustive, but the missing matches are mostly random, so the 69 should be representative of the last several years.) Of those 69, he came back to win 21, almost exactly 30%.</p>
+<p>Ferrer has been more solid than Nadal’s opponents. (It helps that Ferrer only had to face Rafa once, while Nadal’s opponents had face him every time.) I found 122 sets in which Ferrer served at 4-3, leading by a break. He went on to win the set 109 of those times, or about 89%.</p>
+<p>The 89% figure is definitely too high for our purposes: Not only was Ferrer a better player, on average, between 2012 and today, than he is now, but he also had the benefit of facing weaker opponents than Nadal in almost all of those 122 sets. 89%–not far from the theoretical 85% we started with–is a grossly optimistic upper limit.</p>
+<p>Even if we take the average of Nadal’s and Ferrer’s real-life results–roughly 90% conversions for Ferru and 70% for Rafa’s opponents–80% is still overshooting the mark. As we’ve established, Ferrer’s numbers refer to a stronger version of the Spaniard, while Rafa is still near the level of his last half-decade. Even 80%, then, is overstating the chances that Nadal would’ve lost a set.</p>
+<p>That leaves us with a range between 57%, which assumes Nadal would keep winning nearly half of Ferrer’s service points, and 80%, which is based on the experience of both players over the last several years. Ultimately, any final figure comes down to what we think about Ferrer’s level right now–not as good as it was even a couple of years ago, but at the same time, good enough to come within two games of taking a set from the top-ranked player in the world.</p>
+<p>It would take a lot more work to come up with a more precise estimate, and even then, we’d still be stuck not only trying to establish Ferrer’s current ability level, but also his ability level&nbsp;<em>in that set</em>. Just as the word “almost” refers to a range of probabilities, I’m happy to call it a day with my own range. Taking all of these calculations together, we might settle on a narrower field of, say, 65-70%, or about two in three. There’s a good chance a healthy Ferrer would have taken that set from his long-time tormentor, but it was far from a sure thing … or even, given the usual meaning of the word, an “almost” sure thing.</p>
+	</div>
+
+	
+	<footer>
+		<span><span>Posted on </span><a href="http://www.tennisabstract.com/blog/2018/08/31/did-rafael-nadal-almost-lose-a-set-to-david-ferrer/" rel="bookmark"><time datetime="2018-08-31T18:17:54+00:00">August 31, 2018</time><time datetime="2018-09-02T21:48:22+00:00">September 2, 2018</time></a></span><span><span><span>Author </span><a href="http://www.tennisabstract.com/blog/author/jeffsackmanngmail-com/">Jeff</a></span></span><span><span>Categories </span><a href="http://www.tennisabstract.com/blog/category/forecasting/" rel="category tag">Forecasting</a>, <a href="http://www.tennisabstract.com/blog/category/win-probability/" rel="category tag">Win probability</a></span>			</footer>
+
+</article>
+<article id="post-2732">
+	
+	
+
+	<div>
+		<p>In Toronto last week, <a href="http://www.tennisabstract.com/cgi-bin/player.cgi?p=StefanosTsitsipas" target="_blank" rel="noopener">Stefanos Tsitsipas</a> was either very clutch, very lucky, or both. Against <a href="http://www.tennisabstract.com/cgi-bin/player.cgi?p=AlexanderZverev" target="_blank" rel="noopener">Alexander Zverev</a> in Friday’s quarter-final, he won fewer than half of all points, claiming only 56.7% of his service points, compared to Zverev’s 61.2%. The next day, beating <a href="http://www.tennisabstract.com/cgi-bin/player.cgi?p=KevinAnderson" target="_blank" rel="noopener">Kevin Anderson</a> in the semi-final in a third-set tiebreak, he again failed to win half of total points, holding 69.9% of his service points against Anderson’s 75.5%.</p>
+<p>Whether the Greek prospect played his best on the big points or benefited from a hefty dose of fortune, this isn’t sustainable. Running those serve- and return-points-won (SPW and RPW) numbers through my <a href="https://github.com/JeffSackmann/tennis_misc">win probability model</a>, we find that–if you take luck and clutch performance out of the mix–Tsitsipas had a 27.8% chance of beating Zverev and a 26.5% chance of beating Anderson. These two contests–perhaps the two days that have defined the youngster’s career up to this point–are the very definition of “<a href="http://www.tennisabstract.com/blog/2015/09/11/a-new-way-of-looking-at-lottery-matches/">lottery matches</a>.” They could’ve gone either way, and over a long enough period of time, they’ll probably even out.</p>
+<p>Or will they? Are some players more likely to come out on top in these tight matches? Are they consistently–dare I say it–clutch? Using this relatively simple approach of converting single-match SPW and RPW rates into win probabilities, we can determine which players are winning more or less often than they “should,” and whether it’s a skill that some players consistently display.</p>
+<p><strong>Odds in the lottery</strong></p>
+<p>Let’s start with some examples. When one player wins more than 55% of points, he is virtually <a href="http://www.inpredictable.com/2014/07/tennis-matches-and-luck.html">guaranteed</a> to win the match. Even at 53%, his chances are extremely good. Still, a lot of matches–particularly best-of-threes on fast surfaces–end up in the range between 50% and 53%, and that’s what most interesting from this perspective.</p>
+<p>Here are Tsitsipas’s last 16 matches, along with his SPW and RPW rates and the implied win probability for each:</p>
+<pre>Tournament  Round  Result  Opponent     SPW    RPW  WinProb  
+Toronto     F      L       Nadal      62.9%  21.1%       3%  
+Toronto     SF     W       Anderson   69.9%  24.5%      27%  
+Toronto     QF     W       A Zverev   56.7%  38.8%      28%  
+Toronto     R16    W       Djokovic   77.2%  32.0%      85%  
+Toronto     R32    W       Thiem      83.3%  30.2%      93%  
+Toronto     R64    W       Dzumhur    82.8%  35.0%      98%  
+Washington  SF     L       A Zverev   54.7%  25.5%       1%  
+Washington  QF     W       Goffin     71.2%  32.7%      67%  
+Washington  R16    W       Duckworth  80.0%  37.5%      98%  
+Washington  R32    W       Donaldson  59.5%  45.5%      74%  
+Wimbledon   R16    L       Isner      72.5%  18.0%      10%  
+Wimbledon   R32    W       Fabbiano   64.0%  55.9%     100%  
+Wimbledon   R64    W       Donaldson  70.1%  40.9%      95%  
+Wimbledon   R128   W       Barrere    71.5%  39.0%      94%  
+Halle       R16    L       Kudla      59.7%  28.8%       8%  
+Halle       R32    W       Pouille    78.3%  42.9%      99%</pre>
+<p>More than half of the matches are at least 90% or no more than 10%. But that leaves plenty of room for luck in the remaining matches. Thanks in large part to his last two victories, the win probability numbers add up to only 9.8 wins, compared to his actual record of 12-4. All four losses were rather one-sided, but in addition to the Toronto matches against Zverev and Anderson, his wins against <a href="http://www.tennisabstract.com/cgi-bin/player.cgi?p=DavidGoffin" target="_blank" rel="noopener">David Goffin</a> in Washington and, to a lesser extent, <a href="http://www.tennisabstract.com/cgi-bin/player.cgi?p=NovakDjokovic" target="_blank" rel="noopener">Novak Djokovic</a> in Toronto, were far from sure things.</p>
+<p>In the last two months, Stefanos has indeed been quite clutch, or quite lucky.</p>
+<p><strong>Season-wide views</strong></p>
+<p>When we expand our perspective to the entire 2018 season, however, the story changes a bit. In 48 tour-level matches through last week’s play (excluding retirements), Tsitsipas has gone 29-19. The same win probability algorithm indicates that he “should” have won 27.4 matches–a difference of 1.6 matches, or about five percent, which is less than the gap we saw in his last 16. In other words, for the first two-thirds of the season, his results were either unlucky or un-clutch, if only slightly. At the very least, the aggregate season numbers are less dramatic than his recent four-event run.</p>
+<p>For two-thirds of a season, a five percent gap between actual wins and win-probability “expected” wins isn’t that big. For players with at least 30 completed tour-level matches this season, the magnitude of the clutch/luck effect extends from a 20% bonus (for <a href="http://www.tennisabstract.com/cgi-bin/player.cgi?p=PierreHuguesHerbert" target="_blank" rel="noopener">Pierre Hugues Herbert</a>) to a 20% penalty (for <a href="http://www.tennisabstract.com/cgi-bin/player.cgi?p=SamQuerrey" target="_blank" rel="noopener">Sam Querrey</a>, which he reduced a bit by beating <a href="http://www.tennisabstract.com/cgi-bin/player.cgi?p=JohnIsner" target="_blank" rel="noopener">John Isner</a> in Cincinnati on Monday despite winning less than 49% of total points). Here are the ten extremes at each end, of the 59 ATPers who have reached the threshold so far in 2018:</p>
+<pre>Player                 Matches  Wins  Exp Wins  Ratio  
+Pierre Hugues Herbert       30    16      13.2   1.22  
+Nikoloz Basilashvili        34    17      14.0   1.21  
+Frances Tiafoe              39    24      20.0   1.20  
+Evgeny Donskoy              30    13      10.9   1.19  
+Grigor Dimitrov             34    20      17.1   1.17  
+Lucas Pouille               31    16      13.7   1.17  
+Gael Monfils                34    21      18.3   1.15  
+Daniil Medvedev             34    18      15.8   1.14  
+Marco Cecchinato            33    19      16.7   1.14  
+Maximilian Marterer         32    17      15.2   1.12  
+…                                                      
+Leonardo Mayer              37    19      20.1   0.95  
+Guido Pella                 37    20      21.2   0.95  
+Marin Cilic                 38    27      28.8   0.94  
+Novak Djokovic              37    27      29.3   0.92  
+Marton Fucsovics            30    16      17.5   0.92  
+Joao Sousa                  36    18      19.8   0.91  
+Dusan Lajovic               34    17      18.7   0.91  
+Fernando Verdasco           43    22      24.5   0.90  
+Mischa Zverev               39    18      20.7   0.87  
+Sam Querrey                 30    15      18.8   0.80</pre>
+<p>A difference of three or four wins, as many of these players display between their actual and expected win totals, is more than enough to affect their standing in the rankings. The degree to which it matters depends enormously on&nbsp;<em>which&nbsp;</em>matches they win or lose, as Tsitsipas’s semi-final defeat of Anderson has a much greater impact on his point total than, say, Querrey’s narrow victory over Isner does for his. But in general, the guys at the top of this list are ones who have seen unexpected ranking boosts this season, while some of the guys at the bottom have gone the other way.</p>
+<p><strong>The last full season</strong></p>
+<p>Let’s take a look at an entire season’s worth of results. Last year, a few players–minimum 40 completed tour-level matches–managed at least a 20% luck/clutch bonus, but with the surprising exception of <a href="http://www.tennisabstract.com/cgi-bin/player.cgi?p=DaniilMedvedev" target="_blank" rel="noopener">Daniil Medvedev</a>, none of them have repeated the feat so far in 2018:</p>
+<pre>Player                 Matches  Wins  Exp Wins  Ratio  
+Donald Young                43    21      16.2   1.30  
+Fabio Fognini               58    35      28.5   1.23  
+Jack Sock                   55    36      29.8   1.21  
+Jiri Vesely                 45    22      19.3   1.14  
+Daniil Medvedev             43    22      19.7   1.11  
+John Isner                  57    36      32.3   1.11  
+Damir Dzumhur               56    33      29.7   1.11  
+Gilles Muller               48    30      27.1   1.11  
+Alexander Zverev            74    53      48.1   1.10  
+Juan Martin del Potro       53    37      33.6   1.10</pre>
+<p>A few of these players have had solid seasons, but posting a good luck/clutch number in 2017 is hardly a guaranteed, as the likes of <a href="http://www.tennisabstract.com/cgi-bin/player.cgi?p=DonaldYoung" target="_blank" rel="noopener">Donald Young</a>, <a href="http://www.tennisabstract.com/cgi-bin/player.cgi?p=JackSock" target="_blank" rel="noopener">Jack Sock</a>, and <a href="http://www.tennisabstract.com/cgi-bin/player.cgi?p=JiriVesely" target="_blank" rel="noopener">Jiri Vesely</a> can attest. Here is the same list, with 2018 luck/clutch ratios shown alongside last year’s figures:</p>
+<pre>Player                 2017 Ratio  2018 Ratio     
+Donald Young                 1.30        0.89  *  
+Fabio Fognini                1.23         1.1     
+Jack Sock                    1.21        0.68  *  
+Jiri Vesely                  1.14        1.08  *  
+Daniil Medvedev              1.11        1.14     
+John Isner                   1.11        0.96     
+Damir Dzumhur                1.11        1.01     
+Gilles Muller                1.11        0.84  *  
+Alexander Zverev             1.10        1.06     
+Juan Martin del Potro        1.10        1.07</pre>
+<p><em>* fewer than 30 completed tour-level matches</em></p>
+<p>The average luck/clutch ratio of these ten players has fallen to a bit below 1.0.</p>
+<p><strong>Unsustainable luck</strong></p>
+<p>You can probably see where this is going. I generated full-season numbers for each year from 2008 to 2017, and identified those players who appeared in the lists for adjacent pairs of seasons. If luck/clutch ratio is a skill–that is, if it’s more clutch than luck–guys who post good numbers will tend to do so the following year, and those who post lower numbers will be more likely to remain low.</p>
+<p>Across 325 pairs of player-seasons, that’s not what happened. There is almost no relationship between one year of luck/clutch ratio and the next. The r^2 value–a measure of correlation–is 0.07, meaning that the year-to-year numbers are close to random.</p>
+<p>Across sports, analysts have found plenty of similar results, and they are often quick to pronounce that “clutch doesn’t exist,” which leads to predictable rejoinders from the laity that “of course it does,” and so on. It’s boring, and I’m not particularly interested in that debate. What this specific finding shows is:</p>
+<blockquote><p>This type of luck, defined as winning more matches than implied by a player’s SPW and RPW in each match, is not sustainable.</p></blockquote>
+<p>What Tsitsipas accomplished last weekend in Toronto was “clutch” by almost any definition. What this finding demonstrates is that a few such performances–or even a season’s worth of them–doesn’t make it any more likely that he’ll do the same next year. Or, another possibility is that the players who stick at the top level of professional tennis are&nbsp;<em>all</em> clutch in this sense, so while Tsitsipas might be quite mentally strong in key moments, he’ll often run up against players who have similar mental skills, and he won’t be able to consistently win these close matches.</p>
+<p>If Stefanos is able to maintain a ranking in the top 20, which seems plausible, he’ll probably need to win more serve and return points than he has so far. Fortunately for him, he’s still almost <a href="http://www.tennisabstract.com/blog/2018/08/11/maybe-finally-the-next-generation-is-here/">eight years younger</a> than his typical peer, so he has plenty of time to improve. The occasional lottery matches that tilt his way will need to be mere bonuses, not the linchpin of his strategy to reach the top.</p>
+	</div>
+
+	
+	<footer>
+		<span><span>Posted on </span><a href="http://www.tennisabstract.com/blog/2018/08/15/measuring-a-seasons-worth-of-luck/" rel="bookmark"><time datetime="2018-08-15T14:12:05+00:00">August 15, 2018</time><time datetime="2018-08-15T22:07:30+00:00">August 15, 2018</time></a></span><span><span><span>Author </span><a href="http://www.tennisabstract.com/blog/author/jeffsackmanngmail-com/">Jeff</a></span></span><span><span>Categories </span><a href="http://www.tennisabstract.com/blog/category/clutch/" rel="category tag">Clutch</a>, <a href="http://www.tennisabstract.com/blog/category/win-probability/" rel="category tag">Win probability</a></span>			</footer>
+
+</article>
+<article id="post-2316">
+	
+	
+
+	<div>
+		<p><a href="http://www.tennisabstract.com/settesei/2017/06/09/simona-halep-e-le-rimonte-dopo-aver-annullato-uno-o-piu-match-point/"><em>Italian translation at settesei.it</em></a></p>
+<p>In yesterday’s French Open quarterfinals, <a href="http://www.tennisabstract.com/cgi-bin/player.cgi?p=ElinaSvitolina" target="_blank" rel="noopener noreferrer">Elina Svitolina</a> held a commanding lead over <a href="http://www.tennisabstract.com/cgi-bin/player.cgi?p=SimonaHalep" target="_blank" rel="noopener noreferrer">Simona Halep</a>, up a set and 5-1. Depending on what numbers you plug into the <a href="https://github.com/JeffSackmann/tennis_misc">formula</a>, Svitolina’s chance of winning the match at that stage was somewhere between 97% and 99%. Halep <a href="http://www.flashscore.com/match/rXwVbNls/#match-summary">fought back</a> to 5-5, and in the second-set tiebreak, Svitolina earned a match point at 6-5. Halep recovered again, won the breaker, and then cruised to a 6-0 victory in the third set.</p>
+<p>It’s easy to fit a narrative to that sequence of events: After losing two leads, Svitolina was dispirited, and Halep was all but guaranteed a third-set victory. Maybe. It’s impossible to test that sort of thing on the evidence of a single match, but this is hardly the first time a player has failed to convert match point and needed to start fresh in a new set.</p>
+<p>Even without a match point saved, the player who wins the second set has a small advantage going into the decider. In the last six-plus years of women’s Slam matches, the player who won the second set went on to win 51.3% of third sets. On the other hand, if the second set was a tiebreak, the winner of the second set won the decider only 43.7% of the time. Though it sounds contradictory at first, consider what we know about such sets. The second-set winner just barely claimed her set (in the tiebreak), while&nbsp;usually, her opponent took the first set more decisively. Momentum helps a little, but it can’t overcome much of a difference in skill level.</p>
+<p>Let’s dig into the specific cases of second-set match points saved. Thanks to the <a href="https://github.com/JeffSackmann/tennis_slam_pointbypoint">data</a> behind IBM’s Pointstream on Grand Slam websites, we have the point-by-point sequence&nbsp;for most Slam singles matches going back to 2011. (The missing matches are usually those on non-Hawkeye courts and a few&nbsp;small courts at Roland Garros.) That’s over 2,600 women’s singles matches. In just over 1,700 of them, one of the two players earned a match point in the second set. Over 97% of the time, that player converted–needing an average of 1.7 match points to do so–and avoiding playing a third set.</p>
+<p>That leaves 45 matches in which one player held a match point in the second set, failed to finish the job, and was forced to play a third set. It’s a limited sample, and it doesn’t wholeheartedly support the third-set-collapse narrative suggested above. 60% of the time–27 of the 45 matches–the player who failed to convert match point in the second set, like Svitolina did, went on to lose the third set. The third set was often&nbsp;lopsided: 5 of the 27 were bagels (including yesterday’s match), and the average score was 6-2. None of the third sets went beyond 6-4.</p>
+<p>The other 18 matches–the 40% of the time in which the player with the second-set match point bounced back to win the third set–featured rather one-way deciders, as well. In those, the third-set loser managed an average of only 2.3 games, also never doing better than 6-4.</p>
+<p>This is a small sample, so it’s unwise to conclude that this 60/40 margin is anything close to an iron law of tennis. That said, it does provide some evidence that players don’t necessarily collapse after failing to convert a straight-sets win at match point. What happened to Svitolina yesterday is far from certain to happen next time.</p>
+	</div>
+
+	
+	<footer>
+		<span><span>Posted on </span><a href="http://www.tennisabstract.com/blog/2017/06/08/simona-halep-and-recoveries-from-match-point-down/" rel="bookmark"><time datetime="2017-06-08T08:51:44+00:00">June 8, 2017</time><time datetime="2018-09-01T19:19:15+00:00">September 1, 2018</time></a></span><span><span><span>Author </span><a href="http://www.tennisabstract.com/blog/author/jeffsackmanngmail-com/">Jeff</a></span></span><span><span>Categories </span><a href="http://www.tennisabstract.com/blog/category/french-open/" rel="category tag">French Open</a>, <a href="http://www.tennisabstract.com/blog/category/match-points/" rel="category tag">Match points</a>, <a href="http://www.tennisabstract.com/blog/category/momentum/" rel="category tag">Momentum</a>, <a href="http://www.tennisabstract.com/blog/category/win-probability/" rel="category tag">Win probability</a>, <a href="http://www.tennisabstract.com/blog/category/wta/" rel="category tag">WTA</a></span>			</footer>
+
+</article>
+<article id="post-2306">
+	
+	
+
+	<div>
+		<p><em><a href="http://www.tennisabstract.com/settesei/2017/06/07/sui-punti-piu-importanti-i-colpi-si-accorciano/">Italian translation at settesei.it</a></em></p>
+<p>Despite the name, unforced errors aren’t necessarily bad. Sometimes, the right tactic is to play more aggressively, and in order to hit more winners, most players will commit more errors as well. Against some opponents, increasing the unforced error count–as long as there is a parallel improvement in winners or other positive point-ending shots–might be the only way to win.</p>
+<p>Last week, I showed that <a href="http://www.tennisabstract.com/blog/2017/06/01/angelique-kerbers-unclutch-unforced-errors/">one of the causes</a> of <a href="http://www.tennisabstract.com/cgi-bin/player.cgi?p=AngeliqueKerber" target="_blank" rel="noopener noreferrer">Angelique Kerber</a>’s first-round loss was her disproportionate number of errors in big moments. But as my <a href="http://www.tennisabstract.com/blog/2017/06/05/podcast-episode-10-on-and-off-script-at-roland-garros/">podcasting partner</a> Carl Bialik pointed out, that isn’t the whole story. If Kerber played more aggressively on the most important points–one possible cause of more errors–it might be the case that her winner rate was higher, as well. Since the 6-2 6-2 scoreline was so heavily tilted against her, it was a safe bet that Kerber recorded more high-leverage errors than winners. Still, Carl makes a valid point, and one worth testing.</p>
+<p>To do so, let’s revisit the data: 500 women’s singles matches from the last four majors&nbsp;and the first four rounds of this year’s French Open. By measuring the importance of each point, we can determine the average leverage (LEV) of every point in each match, along with the average leverage of points which ended with a player hitting an unforced error, or a winner. Last week, we found that Kerber’s UEs in her first-round loss had an average LEV of 5.5%, compared to a LEV of 3.8% on all other points. For today’s purposes, let’s use match averages as a reference point: Her average UE LEV of 5.5% also compares unfavorably to the overall match average LEV of 4.1%.</p>
+<p>What about winners? Kerber’s 15 winners came on points with an average LEV of 3.9%, below the match average. Case closed: On more important points, Kerber was more likely to commit an error, and less likely to hit a winner.</p>
+<p>Across the whole population, players hit more errors and fewer winners in crucial moments, but only slightly. Points ending in errors are about one percent more important than average (<em>percent</em>, not percentage point, so 4.14% instead of 4.1%), and points ending in winners are about two percent less important than average. In bigger moments, players increase their winner rate about 39% of the time, and they improve their W-UE ratio about 45% of the time. Point being, there are&nbsp;tour-wide effects on more important points, but they are quite small.</p>
+<p>Of course, Kerber’s first-round upset isn’t indicative of how she has played at Slams in general. In my article last week, I mentioned the four players who did the best job of reducing errors at big moments: Kerber, <a href="http://www.tennisabstract.com/cgi-bin/player.cgi?p=AgnieszkaRadwanska" target="_blank" rel="noopener noreferrer">Agnieszka Radwanska</a>, <a href="http://www.tennisabstract.com/cgi-bin/player.cgi?p=TimeaBacsinszky" target="_blank" rel="noopener noreferrer">Timea Bacsinszky</a>, and <a href="http://www.tennisabstract.com/cgi-bin/player.cgi?p=KikiBertens" target="_blank" rel="noopener noreferrer">Kiki Bertens</a>. Kerber and Radwanska both hit fewer winners on big points as well, but Bacsinszky and Bertens manage a perfect combination, hitting slightly more winners as the pressure cranks up. Among players with more than 10 Slam matches since last year’s French, Bacsinszky is the only one to hit winners on more important points than her unforced errors over 75% of the time.</p>
+<p>Compared to her peers, Kerber’s big-moment tactics are remarkably passive. The following table shows the 21 women for whom I have data on at least 13 matches. “UE Rt.” (“UE Ratio”) is similar to the metric I used last week, comparing the average importance of points ending in errors to average points; “W Ratio” is the same, but for points ending in winners, and “W+UE Ratio” is–you guessed it–a (weighted) combination of the two. The combined measure serves as an rough approximation of aggression on big points, where ratios below 1 are more passive than the player’s typical tactics&nbsp;and ratios above 1 are more aggressive.</p>
+<pre>Player                     M  UE Rt.  W Rt.  W+UE Rt.  
+Angelique Kerber          20    0.92   0.85      0.88  
+Alize Cornet              13    0.92   0.87      0.94  
+Agnieszka Radwanska       17    0.91   0.95      0.95  
+Simona Halep              19    0.93   0.94      0.95  
+Samantha Stosur           13    0.95   0.98      0.96  
+Timea Bacsinszky          14    0.89   1.02      0.97  
+Elina Svitolina           15    1.02   0.95      0.97  
+Karolina Pliskova         18    0.97   0.98      0.97  
+Caroline Wozniacki        14    0.93   1.00      0.97  
+Johanna Konta             13    1.00   0.97      0.98  
+Caroline Garcia           14    0.94   1.02      0.98  
+Svetlana Kuznetsova       17    0.96   0.98      0.99  
+Garbine Muguruza          20    1.02   0.94      0.99  
+Venus Williams            25    1.00   0.97      0.99  
+Elena Vesnina             13    0.96   1.03      0.99  
+Anastasia Pavlyuchenkova  15    1.03   0.99      0.99  
+Coco Vandeweghe           13    1.08   0.95      1.01  
+Madison Keys              13    1.01   1.02      1.01  
+Serena Williams           27    0.99   1.05      1.02  
+Carla Suarez Navarro      14    1.00   1.14      1.05  
+Dominika Cibulkova        14    1.11   1.03      1.07</pre>
+<p>Kerber’s combined measure stands out from the pack. Her point-ending shots–both winners and errors, but especially winners–occur disproportionately on less important points, and the overall effect is&nbsp;<em>double</em> that of the next most passive big-moment player, <a href="http://www.tennisabstract.com/cgi-bin/player.cgi?p=AlizeCornet" target="_blank" rel="noopener noreferrer">Alize Cornet</a>. Every other player is&nbsp;close enough&nbsp;to neutral that I would hesitate before making any conclusions about their pressure-point tactics.</p>
+<p>Even when Kerber wins, she does so with effective defense at key points. In only two of her last 20 matches at majors did&nbsp;her winners occur on particularly important points. (Incidentally, one of those two was last year’s US Open final.) In general, her brand of passivity works–she won 16 of those matches. But defensive play doesn’t leave very much room for error–figuratively or literally. The tactics were familiar and proven, but against Makarova, they were poorly executed.</p>
+	</div>
+
+	
+	<footer>
+		<span><span>Posted on </span><a href="http://www.tennisabstract.com/blog/2017/06/06/smaller-swings-in-big-moments/" rel="bookmark"><time datetime="2017-06-06T12:03:06+00:00">June 6, 2017</time><time datetime="2018-09-01T19:20:30+00:00">September 1, 2018</time></a></span><span><span><span>Author </span><a href="http://www.tennisabstract.com/blog/author/jeffsackmanngmail-com/">Jeff</a></span></span><span><span>Categories </span><a href="http://www.tennisabstract.com/blog/category/clutch/" rel="category tag">Clutch</a>, <a href="http://www.tennisabstract.com/blog/category/french-open/" rel="category tag">French Open</a>, <a href="http://www.tennisabstract.com/blog/category/win-probability/" rel="category tag">Win probability</a>, <a href="http://www.tennisabstract.com/blog/category/wta/" rel="category tag">WTA</a></span>			</footer>
+
+</article>
+<article id="post-2296">
+	
+	
+
+	<div>
+		<p><a href="http://www.tennisabstract.com/settesei/2017/06/02/gli-errori-non-forzati-e-nei-momenti-sbagliati-di-angelique-kerber/"><em>Italian translation at settesei.it</em></a></p>
+<p>It’s been a rough year for <a href="http://www.tennisabstract.com/cgi-bin/player.cgi?p=AngeliqueKerber">Angelique Kerber</a>. Despite her No. 1 WTA ranking and place at the top of the French Open draw, she <a href="https://www.usatoday.com/story/sports/tennis/2017/05/28/angelique-kerber-upset-french-open-ekatarina-makarova/102259838/">lost</a> her opening match on Sunday against the unseeded <a href="http://www.tennisabstract.com/cgi-bin/player.cgi?p=EkaterinaMakarova">Ekaterina Makarova</a>. Adding insult to injury, the loss goes down in the record books as a lopsided-looking 6-2 6-2.</p>
+<p><a href="http://www.tennisabstract.com/cgi-bin/wplayer.cgi?p=AndreaPetkovic">Andrea Petkovic</a> chimed in with <a href="http://www.insideout-tennis.de/sets-city-auf-wiedersehen/">her diagnosis</a> of Kerber’s woes:</p>
+<blockquote><p>She’s simply playing without confidence right now. It was tight, even though&nbsp;the scoreline was 2 and 2 but everyone who knows a thing about tennis knew that Angie made errors whenever it mattered because she’s playing without any confidence right now – errors she didn’t make last year.</p></blockquote>
+<p>This is one version of a common analysis: A player lost because she crumbled on the big points. While that probably doesn’t cover all of Kerber’s issues on Sunday–Makarova won <a href="http://www.rolandgarros.com/en_FR/scores/stats/2101ms.html">72 points</a> to her 55–it is true that big points have a disproportionate effect on the end result. For every player who <a href="http://www.rolandgarros.com/en_FR/scores/stats/1225ms.html">squanders a dozen break points</a> yet still wins the match, there are others who falter at crucial moments and ultimately lose.</p>
+<p>This family of theories–that a player over- or under-performed at big moments–is testable. For instance, I showed last summer that <a href="http://www.tennisabstract.com/cgi-bin/player.cgi?p=RogerFederer">Roger Federer</a>’s Wimbledon loss to <a href="http://www.tennisabstract.com/cgi-bin/player.cgi?p=MilosRaonic">Milos Raonic</a> was due in part to his <a href="http://www.tennisabstract.com/blog/2016/08/17/measuring-the-clutchness-of-everything/">weaker performance</a> on more important points. We can do the same with Kerber’s early exit.</p>
+<p>Here’s how it works. Once we calculate each player’s probability of winning the match before each point, we can assign each point a measure of importance–I prefer to call it&nbsp;<em>leverage</em>, or LEV–that quantifies how much the single point could effect the outcome of the match. At 3-0, 40-0, it’s almost zero. At 3-3, 40-AD in the deciding set, it might be over 10%. Across an entire tournament’s worth of matches, the average LEV is around 5% to 6%.</p>
+<p>If Petko is right, we’ll find that the average LEV of Kerber’s unforced errors was higher than on other points. (I’ve excluded points that ended with the serve, since neither player had a chance to commit an unforced error.) Sure enough, Kerber’s 13 groundstroke UEs (that is, excluding double faults) had an average LEV of 5.5%, compared to 3.8% on points that ended some other way. Her UE points were 45% more important than non-UE points.</p>
+<p>Let’s put that number in perspective. Among the 86 women&nbsp;for whom I have point-by-point UE data for their first-round matches this week*, ten timed their errors even worse than Kerber did. <a href="http://www.tennisabstract.com/cgi-bin/player.cgi?p=MagdalenaRybarikova">Magdalena Rybarikova</a> was the most extreme: Her eight UEs against <a href="http://www.tennisabstract.com/cgi-bin/player.cgi?p=CocoVandeweghe">Coco Vandeweghe</a> were more than twice as important, on average, as the rest of the points in that match. Seven of the ten women with bad timing lost their matches, and two others–<a href="http://www.tennisabstract.com/cgi-bin/player.cgi?p=AgnieszkaRadwanska">Agnieszka Radwanska</a> and <a href="http://www.tennisabstract.com/cgi-bin/player.cgi?p=MarketaVondrousova">Marketa Vondrousova</a>–committed so few errors (3 and 4, respectively), that it didn’t really matter. Only <a href="http://www.tennisabstract.com/cgi-bin/player.cgi?p=DominikaCibulkova">Dominika Cibulkova</a>, whose 15 errors were about as badly timed as Kerber’s, suffered from unclutch UEs yet managed to advance.</p>
+<p><em>* This data comes from the Roland Garros website. I aggregate it after each major and make it available <a href="https://github.com/JeffSackmann/tennis_slam_pointbypoint">here</a>.</em></p>
+<p>Another important reference point: Unforced errors are evenly distributed across all leverage levels. Our instincts might tell us otherwise–we might disproportionately recall UEs that came under pressure—-but the numbers don’t bear it out. Thus, Kerber’s badly timed errors are just as badly timed when we compare her to tour average.</p>
+<p>They are also poorly timed when compared to her other recent performances at majors. Petkovic implied as much when she said her compatriot was making “errors she didn’t make last year.” Across her 19 matches at the previous&nbsp;four Slams, her UEs occurred on points that were 11%&nbsp;<em>less</em> important than non-UE points.&nbsp;Her errors caused her to lose&nbsp;relatively more important points in only 5 of the 19 matches, and even in those matches, the ratio of UE leverage to non-UE leverage never exceeded 31%, her ratio in Melbourne this year against Tsurenko. That’s still better than her performance on Sunday.</p>
+<p>Across so many matches, a difference of 11% is substantial. Of the 30 players with point-by-point UE data for at least eight matches at the previous four majors, only three did a better job timing their unforced errors. Radwanska heads the list, at 16%, followed by <a href="http://www.tennisabstract.com/cgi-bin/player.cgi?p=TimeaBacsinszky">Timea Bacsinszky</a> at 14% and <a href="http://www.tennisabstract.com/cgi-bin/player.cgi?p=KikiBertens">Kiki Bertens</a> at 12%. The other 26 players committed their unforced errors at more important moments than Kerber did.</p>
+<p>As is so often the case in tennis,&nbsp;it’s difficult to establish if&nbsp;a&nbsp;stat like this is indicative of a longer-trend trend, or if it is mostly noise. We don’t have point-by-point data for most of Kerber’s matches, so we can’t take the obvious next step of checking the rest of her 2017 matches for similarly unclutch performances. Instead, we’ll have to keep tabs on how well she limits UEs at big moments on those occasions where we have the data necessary to do so.</p>
+	</div>
+
+	
+	<footer>
+		<span><span>Posted on </span><a href="http://www.tennisabstract.com/blog/2017/06/01/angelique-kerbers-unclutch-unforced-errors/" rel="bookmark"><time datetime="2017-06-01T10:20:29+00:00">June 1, 2017</time><time datetime="2018-09-01T19:22:23+00:00">September 1, 2018</time></a></span><span><span><span>Author </span><a href="http://www.tennisabstract.com/blog/author/jeffsackmanngmail-com/">Jeff</a></span></span><span><span>Categories </span><a href="http://www.tennisabstract.com/blog/category/clutch/" rel="category tag">Clutch</a>, <a href="http://www.tennisabstract.com/blog/category/french-open/" rel="category tag">French Open</a>, <a href="http://www.tennisabstract.com/blog/category/research/" rel="category tag">Research</a>, <a href="http://www.tennisabstract.com/blog/category/win-probability/" rel="category tag">Win probability</a>, <a href="http://www.tennisabstract.com/blog/category/wta/" rel="category tag">WTA</a></span>			</footer>
+
+</article>
+<article id="post-2116">
+	
+	
+
+	<div>
+		<p>Yesterday, I announced&nbsp;the new <a href="http://www.tennisabstract.com/blog/2017/01/03/new-at-tennis-abstract-atp-doubles/">ATP doubles results on Tennis Abstract</a>. Today, I want to show you something else I rolled out over the offseason: sequential point-by-point stats for more than 100,000 matches.</p>
+<p>Traditional match stats can do no more than summarize the action. Point-by-point stats are so much more revealing: They show us how matches unfold and allow us to look much deeper into topics such as momentum and situational skill. These are subjects that remain mysteries–or, at the very least, poorly quantified–in tennis.</p>
+<p>As an example, let’s take a look at the new data available for one memorable contest, <a href="http://tennisabstract.com/cgi-bin/match.py?q=2016-0605-299/ATP/London/SF/Andy_Murray/vs/Milos_Raonic/1">the World Tour Finals semifinal</a> between Andy Murray and Milos Raonic:</p>
+<p><a href="http://tennisabstract.com/cgi-bin/match.py?q=2016-0605-299/ATP/London/SF/Andy_Murray/vs/Milos_Raonic/1"><img data-attachment-id="2118" data-permalink="http://www.tennisabstract.com/blog/2017/01/04/new-at-tennis-abstract-point-by-point-stats/murraypbp/" data-orig-file="https://i0.wp.com/www.tennisabstract.com/blog/wp-content/uploads/2017/01/murraypbp.png?fit=923%2C639" data-orig-size="923,639" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="murraypbp" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/www.tennisabstract.com/blog/wp-content/uploads/2017/01/murraypbp.png?fit=300%2C208" data-large-file="https://i0.wp.com/www.tennisabstract.com/blog/wp-content/uploads/2017/01/murraypbp.png?fit=660%2C457" loading="lazy" src="https://i0.wp.com/www.tennisabstract.com/blog/wp-content/uploads/2017/01/murraypbp.png?resize=660%2C457" alt="" width="660" height="457" srcset="https://i0.wp.com/www.tennisabstract.com/blog/wp-content/uploads/2017/01/murraypbp.png?w=923 923w, https://i0.wp.com/www.tennisabstract.com/blog/wp-content/uploads/2017/01/murraypbp.png?resize=300%2C208 300w, https://i0.wp.com/www.tennisabstract.com/blog/wp-content/uploads/2017/01/murraypbp.png?resize=768%2C532 768w" sizes="(max-width: 660px) 100vw, 660px" data-recalc-dims="1" style=";display:block;"></a></p>
+<p>The centerpiece of each page is a win probability graph, which shows the odds that one player would win the match after each point. These graphs do not take player skill into account, though they are adjusted for gender and surface. The red line shows one player’s win probability, while the grey line indicates “volatility”–a measure of how much each point matters. You can see exact win probability and volatility numbers by moving your cursor over the graph. Most match graphs aren’t nearly as dramatic as this one; of course, most matches aren’t nearly as dramatic as this one was.</p>
+<p>(<a href="http://www.tennisabstract.com/blog/category/win-probability/">I’ve written a lot about win probability in the past</a>, and I’ve also published <a href="https://github.com/JeffSackmann/tennis_misc">the code</a> I use to calculate in-match win probability.)</p>
+<p>Next comes a table with situational serving stats for both players. In the screenshot above, you can see deuce/ad splits; the page continues, with tiebreak-specific totals and tallies for break points, set points, and match points. After that is an exhaustive, point-by-point text recap of the match, which displays the sequence of every point played.</p>
+<p>I’ve tried to make these point-by-point match pages as easy to find as possible. Whenever you see a link on a match score, just click that link for the point-by-point page. For instance, here is part of <a href="http://www.tennisabstract.com/cgi-bin/player.cgi?p=AndyMurray">Andy Murray’s page</a>, showing where to click to find the Murray-Raonic example shown above:</p>
+<p><a href="http://www.tennisabstract.com/cgi-bin/player.cgi?p=AndyMurray"><img data-attachment-id="2117" data-permalink="http://www.tennisabstract.com/blog/2017/01/04/new-at-tennis-abstract-point-by-point-stats/murraymatches/" data-orig-file="https://i0.wp.com/www.tennisabstract.com/blog/wp-content/uploads/2017/01/murraymatches.png?fit=851%2C361" data-orig-size="851,361" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="murraymatches" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/www.tennisabstract.com/blog/wp-content/uploads/2017/01/murraymatches.png?fit=300%2C127" data-large-file="https://i0.wp.com/www.tennisabstract.com/blog/wp-content/uploads/2017/01/murraymatches.png?fit=660%2C280" loading="lazy" src="https://i0.wp.com/www.tennisabstract.com/blog/wp-content/uploads/2017/01/murraymatches.png?resize=660%2C280" alt="" width="660" height="280" srcset="https://i0.wp.com/www.tennisabstract.com/blog/wp-content/uploads/2017/01/murraymatches.png?w=851 851w, https://i0.wp.com/www.tennisabstract.com/blog/wp-content/uploads/2017/01/murraymatches.png?resize=300%2C127 300w, https://i0.wp.com/www.tennisabstract.com/blog/wp-content/uploads/2017/01/murraymatches.png?resize=768%2C326 768w" sizes="(max-width: 660px) 100vw, 660px" data-recalc-dims="1" style=";display:block;"></a></p>
+<p>As you can see from all the blue scores in this screenshot, most 2016 ATP tour-level matches have point-by-point data available. The same is true for the last few seasons, as well as top-level WTA matches. The lower the level, the fewer matches are available, but you might be surprised by the breadth and depth of the coverage. The site now contains point-by-point data for almost half of 2016 main-draw men’s <em>Futures</em> matches. For instance, <a href="http://tennisabstract.com/cgi-bin/match.py?q=2016-M-FU-ITA-10A-2016-031/FUT/Italy_F10/F/Stefanos_Tsitsipas/vs/Casper_Ruud/1">here’s the graph</a> for a Futures final last May between Stefanos Tsitsipas and Casper Ruud.</p>
+<p>I’ll keep these as up-to-date as I can, but with my current setup, you can expect to wait 1-4 weeks after a match before the point-by-point page becomes available. I’m hoping to further automate the process and shorten the wait over the course of this season.</p>
+<p>Enjoy!</p>
+	</div>
+
+	
+	<footer>
+		<span><span>Posted on </span><a href="http://www.tennisabstract.com/blog/2017/01/04/new-at-tennis-abstract-point-by-point-stats/" rel="bookmark"><time datetime="2017-01-04T12:52:30+00:00">January 4, 2017</time></a></span><span><span><span>Author </span><a href="http://www.tennisabstract.com/blog/author/jeffsackmanngmail-com/">Jeff</a></span></span><span><span>Categories </span><a href="http://www.tennisabstract.com/blog/category/tennis-abstract/" rel="category tag">Tennis Abstract</a>, <a href="http://www.tennisabstract.com/blog/category/win-probability/" rel="category tag">Win probability</a></span>			</footer>
+
+</article>
+<article id="post-2097">
+	
+	
+
+	<div>
+		<p><a href="http://www.tennisabstract.com/settesei/2016/12/02/le-partite-femminili-piu-emozionanti-della-stagione-2016/"><em>Italian translation at settesei.it</em></a></p>
+<p><a href="http://www.economist.com/blogs/gametheory/2016/11/brief-boring">In my most recent piece for The Economist</a>, I used a metric called <a href="http://www.tennisabstract.com/blog/2011/09/19/quantifying-comebacks-and-excitement-with-win-probability/">Excitement Index</a> (EI) to consider the implications of shortening singles matches to a format like the no-ad, super-tiebreak rules used for doubles. In my simulations, the shorter format didn’t fare well: The most gripping contests are often the longest ones, and the full-length third set is frequently the best part.</p>
+<p>I used data from ATP tournaments&nbsp;in that piece, and several readers have asked how women’s matches score on the EI scale. Many&nbsp;matches from the 2016 season rate extremely highly, while some players we tend to think of as exciting fail to register among the best by this metric. I’ll share some of the results in a moment.</p>
+<p>First, a quick overview of EI. We can <a href="https://github.com/JeffSackmann/tennis_misc">calculate</a> the probability that each player will win a match at any point in the contest, and using those numbers, it’s possible to determine the leverage of every point–that is, the difference between a player’s odds if she wins the next point and her odds if she loses it. At 40-0, down a break in the first set, that leverage is very low: less than 2%. In a tight third-set tiebreak, leverage can climb as high as 25%. The average point is around 5% to 6%, and as long as neither player has a substantial lead, points at 30-30 or later are higher.</p>
+<p>EI is calculated by averaging the leverage of every point in the match. The more high-leverage points, the higher the EI. To make the results a bit more viewer-friendly, I multiply the average leverage by 1,000, so if the typical point has the potential for a 5% (0.05) swing, the EI is 50. The most boring matches, like <a href="http://www.tennisabstract.com/cgi-bin/wplayer.cgi?p=GarbineMuguruza">Garbine Muguruza</a>‘s 6-1 6-0 dismantling of <a href="http://www.tennisabstract.com/cgi-bin/wplayer.cgi?p=EkaterinaMakarova">Ekaterina Makarova</a> in Rome, rate below 25. The most exciting will occasionally top 100, and the average WTA match this year scored a 53.7. By comparison, the average ATP match this year rated at 48.9.</p>
+<p>Of course, the number and magnitude of crucial moments&nbsp;isn’t the only thing that can make a tennis match “exciting.” Finals tend to be more gripping than first-round tilts, long rallies and daring net play are more watchable than error-riddled ballbashing, and Fed Cup rubbers feature crowds that can make the warmup&nbsp;feel like a third-set tiebreak. When news outlets make their “Best Matches of 2016” lists, they’ll surely take some of those other factors into account. EI takes a narrower view, and it is able to show us which matches, independent of context, offered the most pressure-packed tennis.</p>
+<p>Here are the top ten matches of the 2016 WTA season, ranked by EI:</p>
+<pre>Tournament    Match                Score                    EI  
+Charleston    Lucic/Mladenovic     4-6 6-4 7-6(13)       109.9  
+Wimbledon     Cibulkova/Radwanska  6-3 5-7 9-7           105.0  
+Wimbledon     Safarova/Cepelova    4-6 6-1 12-10         101.7  
+Kuala Lumpur  Nara/Hantuchova      6-4 6-7(4) 7-6(10)    100.2  
+Brisbane      CSN/Lepchenko        4-6 6-4 7-5            99.0  
+Quebec City   Vickery/Tig          7-6(5) 6-7(3) 7-6(7)   98.5  
+Miami         Garcia/Petkovic      7-6(5) 3-6 7-6(2)      98.1  
+Wimbledon     Vesnina/Makarova     5-7 6-1 9-7            97.2  
+Beijing       Keys/Kvitova         6-3 6-7(2) 7-6(5)      96.8  
+Acapulco      Stephens/Cibulkova   6-4 4-6 7-6(5)         96.7
+</pre>
+<p>Getting to 6-6 in the final set is clearly a good way to appear on this list. The top&nbsp;<em>fifty</em> matches of the season (out of about 2,700) all reached at least 5-5 in the third. The highest-rated clash that didn’t get that far was <a href="http://www.tennisabstract.com/cgi-bin/wplayer.cgi?p=AngeliqueKerber">Angelique Kerber</a>‘s&nbsp;1-6 7-6(2) 6-4 defeat of <a href="http://www.tennisabstract.com/cgi-bin/wplayer.cgi?p=ElinaSvitolina">Elina Svitolina</a>, with an EI of 88.2. Svitolina’s 4-6 6-3 6-4 victory over <a href="http://www.tennisabstract.com/cgi-bin/wplayer.cgi?p=BethanieMattekSands">Bethanie Mattek Sands</a> in Wuhan, the top match on the list without any sets reaching 5-5, scored an EI of 87.3.</p>
+<p>Wimbledon featured an unusual number of very exciting matches this year, especially compared to Roland Garros and the Australian Open, the other tournaments that forgo a tiebreak in the final set. The top-rated French Open contest was the first-rounder between <a href="http://www.tennisabstract.com/cgi-bin/wplayer.cgi?p=JohannaLarsson">Johanna Larsson</a> and <a href="http://www.tennisabstract.com/cgi-bin/wplayer.cgi?p=MagdaLinette">Magda Linette</a>, which scored 95.3 and ranks 13th for the season, while the highest EI among Aussie Open matches is all the way down at 27th on the list, a 92.8 between <a href="http://www.tennisabstract.com/cgi-bin/wplayer.cgi?p=MonicaPuig">Monica Puig</a> and <a href="http://www.tennisabstract.com/cgi-bin/wplayer.cgi?p=KristynaPliskova">Kristyna Pliskova</a>.</p>
+<p><a href="http://www.tennisabstract.com/cgi-bin/wplayer.cgi?p=DominikaCibulkova">Dominika Cibulkova</a> is the only player who appears twice on this list. That doesn’t mean she’s a sure thing for exciting matches: As we’ll see, elite players rarely are. The only year-end top-tenner who ranks among the highest average EIs is <a href="http://www.tennisabstract.com/cgi-bin/wplayer.cgi?p=SvetlanaKuznetsova">Svetlana Kuznetsova</a>, who played as many “very exciting” matches–those rating among the top fifth of matches this season–as any other woman on tour:</p>
+<pre>Rank  Player                M  Avg EI  V. Exc  Exc %  Bor %  
+1     Kristina Mladenovic  60    59.8      19  55.0%  25.0%  
+2     Christina McHale     46    59.6      16  50.0%  19.6%  
+3     Heather Watson       35    58.5      12  48.6%  25.7%  
+4     Jelena Jankovic      43    57.6      12  55.8%  30.2%  
+5     Svetlana Kuznetsova  64    57.4      21  48.4%  32.8%  
+6     Venus Williams       38    57.1      10  55.3%  31.6%  
+7     Yanina Wickmayer     43    56.5      13  46.5%  30.2%  
+8     Alison Riske         46    56.5      10  45.7%  32.6%  
+9     Caroline Garcia      62    56.4      18  43.5%  33.9%  
+10    Irina-Camelia Begu   42    56.4      14  45.2%  40.5% 
+</pre>
+<p>(Minimum 35 tour-level matches (“M” above), excluding retirements. My data is also missing a random handful of matches throughout the season.)</p>
+<p>The “V. Exc” column tallies how many top-quintile matches the player took part in. The “Exc %” column shows the percent of matches that rated in the top 40% of all WTA contests, while “Bor %” shows the same for the bottom 40%, the more boring matches. Big servers who reach a disproportionate number of tiebreaks and 7-5 sets do well on this list, though it is far from a perfect correspondence.&nbsp;Tiebreaks can create a lot of big moments, but if there were many love service games en route to 6-6, the overall picture isn’t nearly so exciting.</p>
+<p>Unlike Kuznetsova, who played a whopping 32 deciding sets this year, most of the other top women enjoy&nbsp;plenty of blowouts. Muguruza, <a href="http://www.tennisabstract.com/cgi-bin/wplayer.cgi?p=SimonaHalep">Simona Halep</a>, and <a href="http://www.tennisabstract.com/cgi-bin/wplayer.cgi?p=SerenaWilliams">Serena Williams</a> occupy the very last&nbsp;three places on the average-EI ranking, largely because when they win, they do so handily–and they win a lot. The next table shows the WTA year-end top-ten, with their ranking (out of 59) on the average-EI list:</p>
+<pre>Rank  Player        WTA#  Matches  Avg EI  V. Exc  Exc %  Bor %  
+5     Kuznetsova       9       64    57.4      21  48.4%  32.8%  
+13    Pliskova         6       66    55.6      19  48.5%  39.4%  
+16    Keys             8       64    55.4      13  40.6%  35.9%  
+23    Cibulkova        5       68    54.6      21  42.6%  42.6%  
+28    Kerber           1       77    54.0      12  42.9%  41.6%  
+      tour average                   53.7          40.0%  40.0%  
+41    Radwanska        3       69    52.5      12  29.0%  44.9%  
+51    Konta           10       67    51.2      12  34.3%  46.3%  
+57    Muguruza         7       51    49.9       5  33.3%  43.1%  
+58    Halep            4       59    49.6       8  30.5%  50.8%  
+59    Williams         2       44    48.1       3  27.3%  50.0%
+</pre>
+<p>It’s a good thing that fans love Serena, because her matches rarely provide much in the way of big moments. As low as Williams and Halep rate on this measure, <a href="http://www.tennisabstract.com/cgi-bin/wplayer.cgi?p=VictoriaAzarenka">Victoria Azarenka</a> scores even lower. Her Miami fourth-rounder against Muguruza was her only match this season to rank in the “exciting” category, and her average EI was a mere 44.0.</p>
+<p>Clearly, EI isn’t much of a method for identifying the best players. Even looking at the lowest-rated competitors by EI would be misleading: In 56th place, right above Muguruza, is the otherwise unheralded <a href="http://www.tennisabstract.com/cgi-bin/wplayer.cgi?p=NaoHibino">Nao Hibino</a>. EI excels as a metric for ferreting out the most riveting individual matches, whether they were broadcast worldwide or ignored entirely. And the next time someone suggests shortening matches, EI is a great tool to highlight just how much excitement would be lost by doing so.</p>
+	</div>
+
+	
+	<footer>
+		<span><span>Posted on </span><a href="http://www.tennisabstract.com/blog/2016/11/30/the-most-exciting-matches-of-the-2016-wta-season/" rel="bookmark"><time datetime="2016-11-30T13:10:40+00:00">November 30, 2016</time><time datetime="2018-09-01T19:00:27+00:00">September 1, 2018</time></a></span><span><span><span>Author </span><a href="http://www.tennisabstract.com/blog/author/jeffsackmanngmail-com/">Jeff</a></span></span><span><span>Categories </span><a href="http://www.tennisabstract.com/blog/category/win-probability/" rel="category tag">Win probability</a>, <a href="http://www.tennisabstract.com/blog/category/wta/" rel="category tag">WTA</a></span>			</footer>
+
+</article>
+</article></body></html>
